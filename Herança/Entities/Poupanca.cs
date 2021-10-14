@@ -27,6 +27,7 @@ namespace Herança
             Saldo += Saldo * TaxaJuros;
         }
 
+        //utilizando o método da classe conta através da sobreposição
         public override void Saque(double saldoTotal)
         {
             Saldo -= saldoTotal;
