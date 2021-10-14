@@ -30,7 +30,8 @@ namespace Herança
         //utilizando o método da classe conta através da sobreposição
         public override void Saque(double saldoTotal)
         {
-            Saldo -= saldoTotal;
+            base.Saque(saldoTotal);
+            Saldo -= -2;
         }
     }
 }
