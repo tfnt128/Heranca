@@ -26,5 +26,10 @@ namespace Herança
         {
             Saldo += Saldo * TaxaJuros;
         }
+
+        public override void Saque(double saldoTotal)
+        {
+            Saldo -= saldoTotal;
+        }
     }
 }

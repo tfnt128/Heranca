@@ -21,10 +21,10 @@
             Saldo = saldo;
         }
 
-        //Método de Saque
-        public void Saque(double saldoTotal)
+        //Método de Saque ustilizando o virtual para a sobreposição na subclasse poupança
+        public virtual void Saque(double saldoTotal)
         {
-            Saldo -= saldoTotal;
+            Saldo -= saldoTotal + 5;
         }
 
         //Método de Deposito
