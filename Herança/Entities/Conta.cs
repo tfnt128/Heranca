@@ -22,7 +22,7 @@
         }
 
         //Método de Saque
-        public void Saque(double saldoTotal)
+        virtual public void Saque(double saldoTotal)
         {
             Saldo -= saldoTotal;
         }
