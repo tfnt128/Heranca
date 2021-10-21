@@ -1,6 +1,6 @@
 ﻿namespace Herança
 {
-    class Conta
+    abstract class Conta
     {
         //Variáveis e uso do encapsulamento
         public int Numero { get; private set; }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 
 namespace Herança
 {
@@ -7,9 +8,6 @@ namespace Herança
     {
         static void Main(string[] args)
         {
-            ContaJuridica conta = new ContaJuridica(8010, "LaraCroft", 100.0, 500.0);
-
-            Console.WriteLine(conta.Saldo);
 
            
                 //criando lista da classe "conta" e instancindo na lista
@@ -35,9 +33,6 @@ namespace Herança
                     Console.WriteLine("Atualização do saldo das contas " + acc.Numero + ": " + acc.Saldo.ToString("F2", CultureInfo.InvariantCulture));
 
                 }
-
-            
-
         }
     }
 }
